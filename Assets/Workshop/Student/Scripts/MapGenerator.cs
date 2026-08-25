@@ -28,14 +28,18 @@ namespace Workshop.Student
             // 1. random player at the position <0, 0> map
 
             // 2. create obstacles
-            for (int y = 0; y<rows/2; y++)
-            {
-                for (int x = 0; x < columns/2 ; x++)
-                {
-                    int r = UnityEngine.Random.Range(0, floorTiles.Length);
 
-                    GameObject floor = Instantiate(floorTiles[r], new Vector2(x, y), Quaternion.identity);
-                    floor.name = $"{x}-{y}";
+            for (int y = 0; y < rows; y++)
+            {
+                for (int x = 0; x < columns; x++)
+                {
+                    if (x == columns / 2 && y <= rows / 2)
+                    {
+                        int r = UnityEngine.Random.Range(0, wallTiles.Length);
+
+                        GameObject wall = Instantiate(wallTiles[r], new Vector2(x, y), Quaternion.identity);
+                        wall.name = $"wall:{x}-{y}";
+                    }
                 }
             }
 
@@ -43,7 +47,7 @@ namespace Workshop.Student
             //int x = 1;
             //int y = 0;
 
-            for(int y = 0; y < rows; y++)
+            for (int y = 0; y < rows; y++)
             {
                 for (int x = 0; x < columns; x++)
                 {
