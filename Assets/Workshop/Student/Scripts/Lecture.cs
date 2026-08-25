@@ -10,11 +10,11 @@ namespace Assignment
 
         void Start()
         {
-            // LCT01_SyntaxArray();
-            // LCT02_ArrayInitialize();
-            // LCT03_SyntaxLoop();
-            // LCT04_LoopAndArray();
-            // LCT05_Syntax2DArray();
+            //LCT01_SyntaxArray();
+            //LCT02_ArrayInitialize();
+            //LCT03_SyntaxLoop();
+            //LCT04_LoopAndArray();
+            LCT05_Syntax2DArray();
             // LCT06_SizeOf2DArray();
             // LCT07_SyntaxNestedLoop();
         }
@@ -23,12 +23,24 @@ namespace Assignment
 
         public void LCT01_SyntaxArray()
         {
-            throw new System.NotImplementedException();
+            string[] ironManSuit = new string[20];
+            ironManSuit[0] = "Mark I";
+            ironManSuit[1] = "Mark II";
+
+            string tonyStorkWear = ironManSuit[1];
+
+            Debug.Log($"Tony wears: {tonyStorkWear}");
+            Debug.Log($"Size: {ironManSuit.Length}");
         }
 
         public void LCT02_ArrayInitialize()
         {
-            throw new System.NotImplementedException();
+            string[] spooderManSuits = new string[] {"Classic", "Blacks Suit", "Iron Spider Suit"};
+
+            string[] batManSuits = new string[2] { "Classic", "White Knight"};
+
+            Debug.Log($"{batManSuits[0]}");
+
         }
 
         /*
@@ -47,7 +59,17 @@ namespace Assignment
          */
         public void LCT03_SyntaxLoop()
         {
-            throw new System.NotImplementedException();
+            for(int i = 1; i <= 10; i++)
+            {
+                Debug.Log($"<=10 : {i}");
+            }
+
+            Debug.Log("======================");
+
+            for (int i = 1; i < 10; i++)
+            {
+                Debug.Log($"<10 : {i}");
+            }
         }
 
         /*
@@ -79,7 +101,10 @@ namespace Assignment
         public string[] lct04_ironManSuitNames;
         public void LCT04_LoopAndArray()
         {
-            throw new System.NotImplementedException();
+            for(int i = 0; i < lct04_ironManSuitNames.Length ; i++)
+            {
+                Debug.Log(lct04_ironManSuitNames[i]);
+            }
         }
 
         /*
@@ -114,7 +139,25 @@ namespace Assignment
          */
         public void LCT05_Syntax2DArray()
         {
-            throw new System.NotImplementedException();
+            int[,] my2DArray = new int[3, 4]
+            {
+                {1, 2, 3, 0},
+                {4, 5, 6, 0},
+                {7, 8, 9, 0}
+            };
+
+            Debug.Log(my2DArray.GetLength(0));
+            Debug.Log(my2DArray.GetLength(1));
+
+            Debug.Log(my2DArray[0, 2]);
+
+            for(int row=0; row<my2DArray.GetLength(0); row++)
+            {
+                for(int col=0; col<my2DArray.GetLength(1); col++)
+                {
+                    Debug.Log(my2DArray[row, col]);
+                }
+            }
         }
 
         /*
