@@ -167,21 +167,22 @@ MonoBehaviour:
   - {fileID: 6401792816642385161, guid: 8daba404af8ca2b449f79f2ef2325e42, type: 3}
   - {fileID: 8352787512774635016, guid: 6d6ca20a8028f4948abbd0a9460d250f, type: 3}
   - {fileID: 8100579626664158719, guid: c1fd18bc07765e94687daeaba77a29f5, type: 3}
+  - {fileID: 8402306337599026408, guid: 750804a3353a1434ab71f408a13e1b58, type: 3}
   as02_floorTiles:
   - {fileID: 8981274605333006497, guid: 93d0b3edf258c194ca8e4bdaedb3507d, type: 3}
   - {fileID: 5525326628935868067, guid: 42ae0a1037f220c46be78186c07b001e, type: 3}
   - {fileID: 4018252664251982846, guid: 0603b002125343345830af079f75689f, type: 3}
   - {fileID: 6338718052967692477, guid: 4344d40571f47834fb66e2019c9b3176, type: 3}
   - {fileID: 6447585732716477075, guid: fc041445e99b67f4398f47be2d0833ad, type: 3}
-  as02_columns: 3
-  as02_rows: 3
+  as02_columns: 5
+  as02_rows: 5
   as03_wall: {fileID: 5291166318002269242, guid: 413c1aa8e8dffdd448102fbcf99aaf6d, type: 3}
   as03_columns: 5
   as03_rows: 5
   as04_enemyHP: 0a000000140000001e000000
   as04_damage: 5
   as04_target: 2
-  as05_n: 3
+  as05_n: 5
   as06_ironManSuitNames:
   - Mark I
   - Mark II
@@ -206,7 +207,7 @@ MonoBehaviour:
     rows: 3
     cols: 3
     data: 010000000200000003000000040000000500000006000000070000000800000009000000
-  as13_row: 0
+  as13_row: 1
   as14_matrix:
     rows: 3
     cols: 3
